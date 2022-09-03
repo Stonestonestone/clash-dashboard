@@ -25,7 +25,7 @@ jobs:
       with:
         target_branch: gh-pages
         build_dir: dist
-        publish_dir: ./build
         fqdn: clash.razord.top
+        BUILD_SCRIPT: npm install && npm run build
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
